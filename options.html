@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto Network Login - Settings</title>
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            padding: 20px;
+            background: #f4f4f4;
+            max-width: 400px;
+            margin: auto;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            background: white;
+        }
+        h2 { text-align: center; color: #333; }
+        label { font-weight: bold; display: block; margin-top: 10px; }
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            width: 100%;
+            padding: 12px;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 15px;
+            font-size: 16px;
+        }
+        #save { background: #007bff; }
+        #save:hover { background: #0056b3; }
+        #clear { background: #dc3545; }
+        #clear:hover { background: #b02a37; }
+        .disclaimer {
+            font-size: 12px;
+            text-align: center;
+            margin-top: 20px;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <h2>Network Login Credentials</h2>
+    <label>Username:</label>
+    <input type="text" id="username" placeholder="Enter your username">
+    
+    <label>Password:</label>
+    <input type="password" id="password" placeholder="Enter your password">
+    
+    <button id="save">Save Credentials</button>
+    <button id="clear">Clear Data</button> <!-- ✅ Added Clear Data Button -->
+
+    <p class="disclaimer">
+        This extension is an unofficial tool created for personal benefit and is not affiliated with or endorsed by Chandigarh University. 
+        All user credentials are stored locally in the user's personal browser. Any use of this extension is at the user's own risk, 
+        and the creators are not responsible for any consequences resulting from its use. This extension is not intended for 
+        commercial use or distribution.
+    </p>
+
+    <script src="options.js"></script>
+</body>
+</html>

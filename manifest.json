@@ -1,0 +1,30 @@
+{
+  "manifest_version": 3,
+  "name": "Auto Network Login",
+  "version": "1.0",
+  "description": "Automatically logs into the network portal.",
+  "permissions": ["storage", "alarms", "notifications", "tabs"],
+  "host_permissions": ["http://172.16.2.1:1000/*"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://172.16.2.1:1000/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "action": {
+    "default_popup": "options.html",
+    "default_icon": {
+      "16": "icon16.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    }
+  },
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  }
+}
