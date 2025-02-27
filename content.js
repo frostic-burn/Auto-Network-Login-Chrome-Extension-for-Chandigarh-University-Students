@@ -15,7 +15,7 @@ function login() {
 
       setTimeout(() => {
         connectButton.click();
-      }, 1000); // ✅ Small delay to prevent race conditions
+      }, 1000); //  Small delay to prevent race conditions
     });
   }
 }
