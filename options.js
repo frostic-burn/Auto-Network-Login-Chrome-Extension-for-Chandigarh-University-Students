@@ -23,7 +23,7 @@ document.getElementById("save").addEventListener("click", function () {
   });
 });
 
-// ✅ Clear User Credentials
+// Clear User Credentials
 document.getElementById("clear").addEventListener("click", function () {
   chrome.storage.sync.remove(['username', 'password'], () => {
     if (chrome.runtime.lastError) {
